@@ -1,23 +1,5 @@
 <!-- HTML Codes by Quackit.com -->
 <!DOCTYPE html>
-<title>Text Example</title>
-<style>
-div.container {
-background-color: #ffffff;
-}
-div.container p {
-text-align: justify;
-font-family: Arial;
-font-size: 14px;
-font-style: normal;
-font-weight: bold;
-text-decoration: none;
-text-transform: none;
-color: #000000;
-background-color: #ffffff;
-}
-</style>
-
 <div class="container">
 <p>Prostate Cancer Detection HRNet Model</p>
 <p>#Before running this application, make sure you have Python>=3.8, CUDA 11.6, CUDAnn, PyTorch 1.13, and a pwsh/zsh/cmd</p>
