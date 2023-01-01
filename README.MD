@@ -3,6 +3,7 @@
 <div class="container">
 <h1>Prostate Cancer Detection HRNet Model</h1>
 <p>#Before running this application, make sure you have Python>=3.8, CUDA 11.6, CUDAnn, PyTorch 1.13, and a pwsh/zsh/cmd</p>
+<p>#Download the output zip folder and data zip folder from this link and put it in 'prostate_cancer_detection_hrnet_deploy/'</p>
 <p></p>
 <p>Step 1: Download and extract the (.zip) file.</p>
 <p>Step 2: Open the extracted folder and select open in terminal</p>
