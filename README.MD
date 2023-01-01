@@ -1,7 +1,7 @@
 <!-- HTML Codes by Quackit.com -->
 <!DOCTYPE html>
 <div class="container">
-<p style="font-weight: bold;">Prostate Cancer Detection HRNet Model</p>
+<h1>Prostate Cancer Detection HRNet Model</h1>
 <p>#Before running this application, make sure you have Python>=3.8, CUDA 11.6, CUDAnn, PyTorch 1.13, and a pwsh/zsh/cmd</p>
 <p></p>
 <p>Step 1: Download and extract the (.zip) file.</p>
