@@ -1,0 +1,14 @@
+Split Images into train, valid, and test :
+python docs/split.py
+
+Train :
+python tools/train.py --cfg experiments/cls_hrnet_w48_sgd_lr5e-2_wd1e-4_bs32_x100.yaml
+
+Validate :
+python tools/valid.py --cfg experiments/cls_hrnet_w48_sgd_lr5e-2_wd1e-4_bs32_x100.yaml --testModel output\imagenet\cls_hrnet_w48_sgd_lr5e-2_wd1e-4_bs32_x100\model_best.pth.tar
+
+Predict (console) :
+python tools/predict.py --cfg experiments/cls_hrnet_w48_sgd_lr5e-2_wd1e-4_bs32_x100.yaml --testModel output\imagenet\cls_hrnet_w48_sgd_lr5e-2_wd1e-4_bs32_x100\model_best.pth.tar
+
+Predict (UI) :
+pyhton main.py
