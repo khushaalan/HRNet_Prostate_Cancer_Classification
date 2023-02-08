@@ -1,4 +1,4 @@
-# Prostate Cancer Detection HRNet Model
+# Prostate Cancer Classification according to Gleason Grading System using High-Resolution Net 
 
 
 ## Getting Stated
