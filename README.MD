@@ -1,17 +1,58 @@
-<!-- HTML Codes by Quackit.com -->
-<!DOCTYPE html>
-<div class="container">
-<h1>Prostate Cancer Detection HRNet Model</h1>
-<p>#Before running this application, make sure you have Python>=3.8, CUDA 11.6, CUDAnn, PyTorch 1.13, and a pwsh/zsh/cmd</p>
-<p>#Download the 'output' folder and 'data' folder from this link and extract it in 'prostate_cancer_detection_hrnet_deploy/'</p>
-<br><br>
-<p>Step 1: Download and extract the (.zip) file.</p>
-<p>Step 2: Open the extracted folder and select open in terminal</p>
-<p>Step 3: Run 'pip install -r requirements.txt' to install all the required libraries into your computer. This may take a while.</p>
-<p>Step 4: Run 'python docs/split.py' to split your data into train, test and val folders. Configure the input and output data directories in the split.py file.</p>
-<p>Step 5: To run the User Interface(UI) for our application, run 'python main.py'.</p>
-<p>Step 6: Then, open your browser and paste this URL 'http://127.0.0.1:5000/home'</p>
-<p>Step 7: Now you can select any pictures from your test folder and click Upload. Our application will run the pretrained HRNet model to predict the output for the picture that you have uploaded. (e.g: Benign, Grade 3, Grade 4, Grade 5)</p>
-<p>Step 8: Now for the training part, you can simply run 'python tools/train.py --cfg experiments/cls_hrnet_w48_sgd_lr5e-2_wd1e-4_bs32_x100.yaml' to train the model. Since we already trained our model until 100 epochs it will not train further. You can always change the preferred number of epochs in the (.yaml) file. The default number of epochs is 100. If you don't have powerful GPUs, don't mind reducing the batch_size to 8 or 16 in the (.yaml) file.</p>
-<p>Step 9: For the validation part, you can run 'python tools/valid.py --cfg experiments/cls_hrnet_w48_sgd_lr5e-2_wd1e-4_bs32_x100.yaml --testModel output\imagenet\cls_hrnet_w48_sgd_lr5e-2_wd1e-4_bs32_x100\model_best.pth.tar'. It will show the accuracy of our pretrained model. In our case, we have an accuracy of 94.444%.</p>
-</div>
+# Prostate Cancer Detection HRNet Model
+
+
+## Getting Stated
+
+### Prerequisites
+Before running the application, make sure you have the following installed:
+
+- Python >= 3.8
+- CUDA 11.6
+- CUDAnn
+- PyTorch 1.13
+- A terminal (pwsh/zsh/cmd)
+
+### Download and Extract Data
+- Download the 'output' and 'data' folders from the specified link.
+- Extract the folders in the `prostate_cancer_detection_hrnet_deploy/` directory.
+
+### Installing Required Libraries
+- Open the extracted folder in the terminal.
+- Run the following command to install the required libraries: `pip install -r requirements.txt`. This may take a while.
+
+### Splitting the Data
+- Run the following command to split the data into train, test, and validation folders: `python docs/split.py`.
+- Configure the input and output data directories in the `split.py` file.
+
+### Running the User Interface (UI)
+- Run the following command to start the User Interface (UI) for the application: `python main.py`.
+- Open your browser and paste this URL: `http://127.0.0.1:5000/home`.
+- Upload pictures from the test folder and the application will predict the output (e.g., Benign, Grade 3, Grade 4, Grade 5).
+
+### Training the Model
+- Run the following command to train the model: `python tools/train.py --cfg experiments/cls_hrnet_w48_sgd_lr5e-2_wd1e-4_bs32_x100.yaml`.
+- Note: The model has already been trained until 100 epochs, so it will not train further. You can change the preferred number of epochs in the `.yaml` file (default: 100). If you don't have a powerful GPU, consider reducing the batch_size to 8 or 16 in the `.yaml` file.
+
+### Validating the Model
+- Run the following command to validate the model: `python tools/valid.py --cfg experiments/cls_hrnet_w48_sgd_lr5e-2_wd1e-4_bs32_x100.yaml --testModel output\imagenet\cls_hrnet_w48_sgd_lr5e-2_wd1e-4_bs32_x100\model_best.pth.tar`.
+- It will show the accuracy of the pretrained model. In this case, the accuracy is 94.444%.
+
+## Contributing
+If you want to contribute to this project:
+
+1. Fork the repository
+2. Clone the repository to your local machine
+3. Create a new branch with a descriptive name
+4. Make changes and commit them to your branch
+5. Push the changes to your forked repository
+6. Submit a pull request to the main repository with a detailed explanation of your changes
+
+## Author
+- [khushaalan](https://github.com/khushaalan)
+
+## License
+This project is licensed under the MIT License
+
+## Acknowledgments
+- Project inspiration (https://github.com/HRNet/HRNet-Image-Classification)
+- Dataset source (HKUM Dataset)
